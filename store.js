@@ -4,9 +4,9 @@ import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { reducer } from './reducers/helloWorld'
 
-const customMiddleware = store => next => action => {
+const consoleLogMiddleware = store => next => action => {
   console.log("Middleware triggered:" , action);
-  next(action);
+  return next(action);
 }
 
 const delayMiddleware = store => next => action => {
@@ -15,7 +15,7 @@ const delayMiddleware = store => next => action => {
 
 const store = createStore(
   reducer,
-  composeWithDevTools(applyMiddleware(customMiddleware, delayMiddleware)),
+  composeWithDevTools(applyMiddleware(consoleLogMiddleware, delayMiddleware)),
 );
 
 export default store;

@@ -13,9 +13,13 @@ function renderScreen() {
   return (
     `<h1>${display}</h1>`
   );
-  $('.display').html(display)
-};
+  // $('.display').html(display)
+}
+
+$('#helloWorld').onClick(()=>{
+  store.dispatch(helloWorld());
+});
 
 $(() => { 
   renderScreen();
-})
+});
