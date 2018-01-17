@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1516157542495" clover="3.2.0">
-  <project timestamp="1516157542496" name="All files">
-    <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="2" files="5" classes="5">
+<coverage generated="1516202878275" clover="3.2.0">
+  <project timestamp="1516202878275" name="All files">
+    <metrics statements="17" coveredstatements="15" conditionals="5" coveredconditionals="3" methods="5" coveredmethods="5" elements="27" coveredelements="23" complexity="0" loc="17" ncloc="17" packages="2" files="6" classes="6">
       <package name="actions">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <file name="actionType.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/actionType.js">
-          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="3" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
         </file>
         <file name="helloWorld.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/helloWorld.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="3" count="1" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+        </file>
+        <file name="increment.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/increment.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/index.js">
           <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         </file>
       </package>
       <package name="reducers">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="9" conditionals="5" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <file name="helloWorld.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/reducers/helloWorld.js">
           <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="5" count="1" type="stmt"/>
@@ -26,8 +33,14 @@
           <line num="12" count="1" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
         </file>
-        <file name="index.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/reducers/index.js">
-          <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="increment.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/reducers/increment.js">
+          <metrics statements="6" coveredstatements="4" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+          <line num="10" count="1" type="cond" truecount="0" falsecount="2"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>

@@ -1,21 +1,28 @@
 'use strict';
 
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { reducer } from './reducers/helloWorld'
+import { reducer as helloWorldReducer } from './reducers/helloWorld';
+import { reducer as incrementReducer } from './reducers/increment';
 
-const consoleLogMiddleware = store => next => action => {
-  console.log("Middleware triggered:" , action);
-  return next(action);
-}
+import { helloWorld, increment, pause } from './action';
+import { HELLO_WORLD, INCREMENT, PAUSE } from './actions/actionType';
 
 const delayMiddleware = store => next => action => {
-  return setTimeout(() => {next(action);}, 3000);
+  if (action.type === INCREMENT) {
+    let interval = setInterval(() => store.dispatch(increment()), 1000);
+  } else if (action.type === PAUSE) {
+    clearInterval(interval);
+  }
+  next(action);
 }
 
 const store = createStore(
-  reducer,
-  composeWithDevTools(applyMiddleware(consoleLogMiddleware, delayMiddleware)),
+  combineReducers({
+    helloWorld: helloWorldReducer,
+    Counter: incrementReducer
+  }),
+  composeWithDevTools(applyMiddleware(delayMiddleware)),
 );
 
 export default store;
