@@ -1,6 +1,6 @@
 'use strict';
 
-import { store } from './store';
+import store from './store';
 import { helloWorld } from './actions';
 
 store.subscribe(renderScreen);

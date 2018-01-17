@@ -9,7 +9,13 @@ const customMiddleware = store => next => action => {
   next(action);
 }
 
+const delayMiddleware = store => next => action => {
+  return setTimeout(() => {next(action);}, 3000);
+}
+
 const store = createStore(
   reducer,
-  composeWithDevTools(applyMiddleware(customMiddleware)),
+  composeWithDevTools(applyMiddleware(customMiddleware, delayMiddleware)),
 );
+
+export default store;
