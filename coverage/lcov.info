@@ -1,5 +1,5 @@
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/store.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/store.js
 FNF:0
 FNH:0
 DA:13,1
@@ -9,7 +9,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/actionType.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/actions/actionType.js
 FNF:0
 FNH:0
 DA:3,3
@@ -22,7 +22,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/helloWorld.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/actions/helloWorld.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:1
@@ -34,7 +34,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/increment.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/actions/increment.js
 FN:3,(anonymous_0)
 FN:7,(anonymous_1)
 FN:11,(anonymous_2)
@@ -52,7 +52,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/index.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/actions/index.js
 FNF:0
 FNH:0
 LF:0
@@ -61,7 +61,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/middleware/delayMiddleware.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/middleware/delayMiddleware.js
 FN:9,(anonymous_0)
 FN:9,(anonymous_1)
 FN:9,(anonymous_2)
@@ -88,7 +88,7 @@ BRF:4
 BRH:1
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/reducers/helloWorld.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/reducers/helloWorld.js
 FN:9,(anonymous_0)
 FNF:1
 FNH:1
@@ -106,7 +106,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:/Users/adpoyao/thinkful_projects/redux/redux-timeout2/reducers/increment.js
+SF:/Users/nategarrett/thinkful/projects/redux-middleware-ver2/reducers/increment.js
 FN:9,(anonymous_0)
 FNF:1
 FNH:1
