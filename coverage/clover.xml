@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1516214055753" clover="3.2.0">
-  <project timestamp="1516214055754" name="All files">
-    <metrics statements="27" coveredstatements="22" conditionals="10" coveredconditionals="4" methods="10" coveredmethods="8" elements="47" coveredelements="34" complexity="0" loc="27" ncloc="27" packages="3" files="7" classes="7">
+<coverage generated="1516214712038" clover="3.2.0">
+  <project timestamp="1516214712039" name="All files">
+    <metrics statements="27" coveredstatements="22" conditionals="10" coveredconditionals="4" methods="10" coveredmethods="8" elements="47" coveredelements="34" complexity="0" loc="27" ncloc="27" packages="4" files="8" classes="8">
       <package name="redux-timeout2">
-        <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="store.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/store.js">
-          <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
-          <line num="11" count="2" type="stmt"/>
-          <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="13" count="1" type="stmt"/>
-          <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="17" count="1" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
         </file>
       </package>
       <package name="redux-timeout2.actions">
@@ -36,6 +30,18 @@
         </file>
         <file name="index.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/actions/index.js">
           <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        </file>
+      </package>
+      <package name="redux-timeout2.middleware">
+        <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <file name="delayMiddleware.js" path="/Users/adpoyao/thinkful_projects/redux/redux-timeout2/middleware/delayMiddleware.js">
+          <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
         </file>
       </package>
       <package name="redux-timeout2.reducers">

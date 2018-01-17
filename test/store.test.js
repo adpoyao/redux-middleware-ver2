@@ -1,5 +1,6 @@
 'use strict';
-import store, { delayMiddleware } from '../store';
+import store from '../store';
+import delayMiddleware from '../middleware/delayMiddleware';
 
 import { startIncrement, increment, pause } from '../actions';
 import { START_INCREMENT, INCREMENT, PAUSE } from '../actions/actionType';
