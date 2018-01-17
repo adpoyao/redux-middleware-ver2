@@ -1,9 +1,12 @@
 'use strict';
-import { helloWorld } from '../actions/helloWorld';
+import { helloWorld } from '../actions';
+import { HELLO_WORLD } from '../actions/actionType';
 
-test('function \'helloWorld\' should return {type: HELLO_WORLD}', () => {
-  expect(helloWorld()).toBe(
-    expect.objectContaining({
-      type: 'HELLO_WORLD'
-    }));
-});
+describe('actions', () => {
+  it('helloWorld action should return expected type', () => {
+    const expectedAction = {
+      type: HELLO_WORLD
+    }
+    expect(helloWorld()).toEqual(expectedAction)
+  })
+})

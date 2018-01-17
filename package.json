@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:watch": "npm test -- --watch"
   },
   "author": "Eddie Yao",
   "license": "ISC",
@@ -13,5 +14,9 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-mock-store": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
