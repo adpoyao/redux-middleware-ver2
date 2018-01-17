@@ -1,0 +1,17 @@
+{
+  "name": "redux-timeout2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Eddie Yao",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.1.1",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.4.0"
+  }
+}
