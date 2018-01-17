@@ -20,8 +20,19 @@ describe('delayMiddleware', () => {
 
   it('passed through non-function action', () => {
     const { next, invoke } = create()
-    const action = {type: 'START_INCREMENT'}
+    const action = increment()
     invoke(action)
     expect(next).toHaveBeenCalledWith(action)
   });
+
+  // Failing Test
+  it('passes dispatch and getState', () => {
+    const { store, invoke } = create()
+    invoke((dispatch, getState) => {
+      dispatch('TEST DISPATCH')
+      getState();
+    })
+    expect(store.dispatch).toHaveBeenCalledWith('TEST DISPATCH')
+    expect(store.getState).toHaveBeenCalled()
+  })
 });

@@ -10,7 +10,7 @@ export const delayMiddleware = ({ dispatch, getState }) => next => action => {
   if (action.type === START_INCREMENT) {
     let interval = setInterval(() => store.dispatch(increment()), 1000);
   } else if (action.type === PAUSE) {
-    clearInterval(interval);
+    return clearInterval(interval);
   }
   return next(action);
 }
