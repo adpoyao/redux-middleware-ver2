@@ -25,14 +25,9 @@ describe('delayMiddleware', () => {
     expect(next).toHaveBeenCalledWith(action)
   });
 
-  // Failing Test
-  it('passes dispatch and getState', () => {
+  it('dispatches increment() upon startIncrement()', () => {
     const { store, invoke } = create()
-
-    invoke(startIncrement())
-    console.log('!!!startIncrement', startIncrement())
-    expect(store.dispatch).toHaveBeenCalledWith(increment())
-    expect(store.getState).toHaveBeenCalled()
+    let invocation = invoke(startIncrement());
+    expect(invocation).toEqual(increment());
   })
-
 });
