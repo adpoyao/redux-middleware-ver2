@@ -37,42 +37,4 @@ describe('increment reducer', () => {
       }
     )
   })
-
-  // Test 1
-  // jest.useFakeTimers();
-  // test('waits 2 seconds before calling pause', () => {
-  //   const increment = require('../actions')
-  // })
-  // increment();
-  // return setTimeout(pause(), 3000)
-  // .then(() => expect(setInterval).toHaveBeenCalledTimes(3))
-  
-  // expect(setInterval).toHaveBeenLastCalledWith(expect.any(Function), 1000);
-
-  // Test 2
-  // it('should return the correct counter by middleware after waiting a specified time', () => {
-  //   const initialState = {
-  //     counter: 0
-  //   }
-  //   setTimeout(pause(), 2000);
-  //   let total = incrementReducer(initialState, {
-  //     type: INCREMENT
-  //   })
-  //   return total
-  //   .then(data => {
-  //     expect(data).toEqual({
-  //       counter: 3
-  //     })
-  //   })
-  // });
-
-  // Test 3
-  // it('should callback after increment actions', () => {
-  //   const next = sinon.spy();
-  //   const callback = sinon.spy();
-  //   const middleware = newReportMiddleware({ callback, target: 3000});
-
-  //   middleware({})(next)({ type: INCREMENT });
-  //   middleware({})(next)({ type: PAUSE });
-  // })
 })

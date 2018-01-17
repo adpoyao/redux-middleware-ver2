@@ -5,17 +5,21 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { reducer as helloWorldReducer } from './reducers/helloWorld';
 import { reducer as incrementReducer } from './reducers/increment';
 
-import { helloWorld, increment, pause } from './action';
-import { HELLO_WORLD, INCREMENT, PAUSE } from './actions/actionType';
+import { helloWorld, startIncrement, increment, pause } from './actions';
+import { HELLO_WORLD, START_INCREMENT, INCREMENT, PAUSE } from './actions/actionType';
 
-const delayMiddleware = store => next => action => {
-  if (action.type === INCREMENT) {
-    let interval = setInterval(() => store.dispatch(increment()), 1000);
-  } else if (action.type === PAUSE) {
-    clearInterval(interval);
+function createDelayMiddleware(extraArg) {
+  return store => next => action => {
+    if (action.type === START_INCREMENT) {
+      let interval = setInterval(() => store.dispatch(increment()), 1000);
+    } else if (action.type === PAUSE) {
+      clearInterval(interval);
+    }
+    return next(action);
   }
-  next(action);
 }
+
+export const delayMiddleware = createDelayMiddleware();
 
 const store = createStore(
   combineReducers({
