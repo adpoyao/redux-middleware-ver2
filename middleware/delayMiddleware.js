@@ -3,16 +3,15 @@ import store from '../store';
 import { reducer as helloWorldReducer } from '../reducers/helloWorld';
 import { reducer as incrementReducer } from '../reducers/increment';
 
-import { helloWorld, startIncrement, increment, pause } from '../actions';
-import { HELLO_WORLD, START_INCREMENT, INCREMENT, PAUSE } from '../actions/actionType';
+import { helloWorld, startIncrement, increment, pause, delayIncrement } from '../actions';
+import { HELLO_WORLD, START_INCREMENT, INCREMENT, PAUSE, DELAY_INCREMENT } from '../actions/actionType';
 
 export const delayMiddleware = ({ dispatch, getState }) => next => action => {
-  let interval;
-  if (action.type === START_INCREMENT) {
-    return store.dispatch(increment());
-    // let interval = setInterval(() => store.dispatch(increment()), 1000);
-  } else if (action.type === PAUSE) {
-    clearInterval(interval);
+  if (action.type === DELAY_INCREMENT) {
+    let start = function(){
+      console.log('DELAYED #2!!')
+      return store.dispatch(startIncrement())}
+    return setTimeout(start, 0)
   }
   return next(action);
 }

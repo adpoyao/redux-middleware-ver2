@@ -1,11 +1,11 @@
 'use strict';
 import store from '../store';
-import delayMiddleware from '../middleware/delayMiddleware';
+import incrementMiddleware from '../middleware/incrementMiddleware';
 
 import { startIncrement, increment, pause } from '../actions';
 import { START_INCREMENT, INCREMENT, PAUSE } from '../actions/actionType';
 
-describe('delayMiddleware', () => {
+describe('incrementMiddleware', () => {
   const create = () => {
     const store = {
     getState: jest.fn(() => ({})),
@@ -13,7 +13,7 @@ describe('delayMiddleware', () => {
     };
     const next = jest.fn()
     
-    const invoke = (action) => delayMiddleware(store)(next)(action)
+    const invoke = (action) => incrementMiddleware(store)(next)(action)
     
     return {store, next, invoke}
   };
